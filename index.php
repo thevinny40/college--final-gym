@@ -1,6 +1,7 @@
 <?php
 session_start();
 require('db.php');
+echo "Start";
 
 $username="";
 $pwd="";

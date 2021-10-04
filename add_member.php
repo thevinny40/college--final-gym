@@ -18,10 +18,21 @@ if (isset($_POST['member'])) {
 
 
   if (count($errors) == 0) {
-  
 
-    $query = "INSERT INTO member (m_name,age,doj,gen,package,fstatus,mobile_no,tr_name) 
-          VALUES('$name','$age','$doj','$gen','$package','$fstatus','$mobile_no','$trainer_name')";
+    // fetch Trainer id 
+
+    $trainer_id = "SELECT * FROM trainer WHERE tr_name='$trainer_name' LIMIT 1";
+    $records = mysqli_query($conn,$trainer_id);
+    $trainer_id=mysqli_fetch_array($records);
+    $trainer_id = $trainer_id[0];
+
+     
+    // This is main error we don't insert forigen key 
+
+    
+
+    $query = "INSERT INTO member (m_name,age,doj,gen,package,fstatus,mobile_no,tr_id,tr_name) 
+          VALUES('$name','$age','$doj','$gen','$package','$fstatus','$mobile_no',$trainer_id,'$trainer_name')";
     $result = mysqli_query($conn, $user_check_query);
     $sql=mysqli_query($conn, $query);
     if ($sql) {
