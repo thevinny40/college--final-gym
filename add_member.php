@@ -54,7 +54,6 @@ if (isset($_POST['member'])) {
 		<div><h3>ADD MEMBER</h3></div>
 		 <?php include('errors.php'); 
        echo @$msg;
-       echo $sql;
     ?>
 
 		<label class="mt-3">MEMBER NAME <abbr title="This field is mandatory" aria-label="required"></abbr></label>

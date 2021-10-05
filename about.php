@@ -67,8 +67,8 @@
 	margin:auto;
 	
 	/* This will make the text to display at
-	the center of the page vertically */
-	height:%;
+	the center of the page vertically 
+	height:%;  */
 }
 	
 .firstHalf{	

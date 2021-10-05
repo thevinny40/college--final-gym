@@ -49,7 +49,7 @@ include("auth.php");
     <n>
   <a class="navbar-brand" href="home.php"><h6 class="text-center">GYM MANAGEMENT SYSTEM</h6></a>
   <n>
-  <h6 style="color:white; text-align:;"> MR.KARTIK NAIDU SIR</h6>
+  <h6 style="color:white; text-align:center;"> MR.KARTIK NAIDU SIR</h6>
   <n>
   <a href="logout.php" class=" nav nav-link">log out</a>
 </div>
